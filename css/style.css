@@ -160,9 +160,10 @@ a.socialBut:hover {
 footer {
     color: #000000;
     clear: both;
-    /*padding: 8px 5%;*/
+    text-align: center;
 }
 
 footer p {
-    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 10px;
 }
