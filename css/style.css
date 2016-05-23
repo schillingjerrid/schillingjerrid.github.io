@@ -161,5 +161,8 @@ footer {
     color: #000000;
     clear: both;
     /*padding: 8px 5%;*/
-    text-align: center;
+}
+
+footer p {
+    margin: 0 auto;
 }
