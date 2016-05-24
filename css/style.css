@@ -24,6 +24,10 @@ ul {
     list-style: none;
 }
 
+video {
+    border: 1px solid black;
+}
+
 /**** SIDEBAR STYLE ****/
 
 aside {
