@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+/**** MAIN PAGE STYLE ****/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 18px;
+}
+
+/**** OTHER STYLE ****/
+
+ul {
+    list-style: none;
+}
+
+video {
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px #000000;
+}
+
+/**** SIDEBAR STYLE ****/
+
+aside {
+    font-size: 20px;
+    background-color: #28aadc;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    box-shadow: 0px 0px 4px #000000;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+i.sidebarIcon {
+    color: #ffffff;
+    background-color: #00648c;
+    border-radius: 50%;
+    margin: 50px auto 10px auto;
+    padding: 8px 8px 12px 8px;
+
+}
+
+aside ul {
+    padding: 6px;
+}
+
+aside ul li {
+    margin-top: 40px;
+}
+
+li.navBut {
+    display: block;
+}
+
+a.navBut {
+    color: #00648c;
+    text-decoration: none;
+}
+
+a.navBut:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px black ;
+}
+
+/**** CONTENT STYLE ****/
+
+.content {
+    margin-left: 250px;
+    position: relative;
+    width: auto;
+}
+
+.sectionHeading {
+    height: 36px;
+    font-size: 28px;
+    color: #00648c;
+}
+
+article {
+    margin-top: 20px;
+}
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/**** HEADER STYLE ****/
+
+header {
+    color: #00648c;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    text-shadow: 0px 1px 1px #000000;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+header h2 {
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+}
+
+.mainImage {
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+hr.pagebreak {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/**** MAIN STYLE ****/
+
+main {
+    padding: 0 25%;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.expList {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+a.socialBut {
+    color: #c8cdd2;
+}
+
+a.socialBut:hover {
+    color: #00648c;
+}
+
+.fa-spin-hover:hover {
+    animation: fa-spin 0.7s 1 linear;
+}
+
+/**** FOOTER STYLE ****/
+
+footer {
+    color: #000000;
+    clear: both;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
