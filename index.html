@@ -4,48 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jerrid Schilling</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/test.css">
   <link href='https://fonts.googleapis.com/css?family=Martel+Sans' rel='stylesheet' type='text/css'>
+  <script src="js/main.js"></script>
   <script src="https://use.fontawesome.com/450b4d805f.js"></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <aside>
-      <nav class="sideNav">
-        <div class="icon">
-          <i class="fa fa-code fa-3x sidebarIcon"></i>
+
+  <div class="page-wrapper">
+    <nav id="page-top" class="head-nav">
+      <div class="content-wrapper">
+        <div class="left-links">
+          <a href="#aboutjerrid" class="nav-btn">About</a>
+          <a href="#education" class="nav-btn">Education</a>
+          <a href="#workexperience" class="nav-btn">Work</a></li>
         </div>
-        <ul>
+        <img class="icon" src="content/JS.png" alt="Jerrid Schilling's initials">
+        <div class="right-links">
+          <a href="#projects" class="nav-btn">Projects</a>
+          <a href="#contactjerrid" class="nav-btn">Contact</a>
+          <a href="content/Jerrid Schilling Resume 2016.pdf" target="blank" class="nav-btn">Resume</a>
+        </div>
+
+<!--
+        <ul class="nav-links">
           <li><a href="#aboutjerrid" class="navBut">About Jerrid</a></li>
           <li><a href="#education" class="navBut">Education</a></li>
           <li><a href="#workexperience" class="navBut">Work Experience</a></li>
           <li><a href="#projects" class="navBut">Projects</a></li>
           <li><a href="#contactjerrid" class="navBut">Contact Jerrid</a></li>
           <li><a href="content/Jerrid Schilling Resume 2016.pdf" target="blank" class="navBut">Resume</a></li>
-          <li><a href="#pageTop" class="navBut">Back to top</a></li>
           <li><a href="portfolio/personalSiteV1.0/index.html" class="navBut">Original Site</a></li>
         </ul>
-      </nav>
-    </aside>
-          
+-->
+      </div>
+    </nav>
 
-    <div class="content">
-
-      <header id="pageTop">
-        <img src="content/jerrid.jpg" alt="Picture of Jerrid Schilling" class="mainImage">
-        <div class="headText">
+    <header class="hero-header">
+      <div class="content-wrapper">
+        <img class="main-image" src="content/jerrid.jpg" alt="Picture of Jerrid Schilling">
+        <div class="head-text">
           <h1>Jerrid Schilling</h1>
           <h2>Software Engineer</h2>
           <h3 style="color: red;">New site under construction!</h3>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <hr class="pagebreak">
+    <hr class="pagebreak">
 
-      <main>
+    <main>
+      <div class="content-wrapper">
         <section id="aboutjerrid">
-
           <h2 class="sectionHeading">About Jerrid</h2>
           <hr>
           <article>
@@ -67,9 +79,10 @@
             </ul>
           </article>
         </section>
+      </div>
 
+      <div class="content-wrapper">
         <section id="education">
-
           <h2 class="sectionHeading">Education</h2>
           <hr>
           <article>
@@ -85,9 +98,10 @@
           </article>
 
         </section>
+      </div>
 
+      <div class="content-wrapper">
         <section id="workexperience">
-
           <h2 class="sectionHeading">Work Experience</h2>
           <hr>
           <article>
@@ -130,9 +144,10 @@
           </article>
 
         </section>
+      </div>
 
+      <div class="content-wrapper">
         <section id="projects">
-
           <h2 class="sectionHeading">Projects</h2>
           <hr>
           <article>
@@ -149,9 +164,10 @@
           </article>
 
         </section>
+      </div>
 
+      <div class="content-wrapper">
         <section id="contactjerrid">
-
           <h2 class="sectionHeading">Contact Jerrid</h2>
           <hr>
           <article>
@@ -170,16 +186,17 @@
           </article>
 
         </section>
-      </main>
+      </div>
 
-      <hr class="pagebreak">
+    </main>
 
-      <footer>
+    <hr class="pagebreak">
+
+    <footer>
+      <div class="content-wrapper">
         <p>Jerrid Schilling &copy; 2016. Created by Jerrid Schilling.</p>
-      </footer>
-
-    </div> <!-- End content -->
-
-  </div> <!-- End wrapper -->
+      </div>
+    </footer>
+  </div> <!-- End page-wrapper -->
 </body>
 </html>
