@@ -45,21 +45,6 @@ body, html {
   position: relative;
 }
 
-/*.nav-links {
-  list-style: none;
-  display: inline;
-}
-
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #34495e;
-  font-size: 0.9em;
-}*/
-
 /* HEADER STYLE */
 .hero-header {
   background: #666 url(../content/mountains2.jpeg);
