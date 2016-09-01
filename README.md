@@ -1,2 +1,2 @@
-# schillingjerrid.github.io
-Personal webpage for Jerrid Schilling.
+##Jerrid Schilling
+#Personal website and portfolio
