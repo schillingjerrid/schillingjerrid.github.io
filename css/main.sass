@@ -59,6 +59,9 @@ html
     background: $darkGreen
     color: $tan
     
+    ul
+        list-style: none
+    
 #education
     background: $darkGray
     color: $darkBlue
@@ -67,9 +70,28 @@ html
     background: $tan
     color: $darkBlue
     
+    .work-grp
+        margin-bottom: 20px
+    
 #projects
     background: $darkBlue
     color: $tan
+    
+    .col
+        width: 500px
+        height: 400px
+        margin: 5px
+        border: 1px solid white
+        background: black url( "{{ site.baseurl }}/assets/images/placeholder.png" ) no-repeat center center
+        color: black
+        
+        font-size: 3em
+        text-align: center
+        line-height: 400px
+        
+    .col:hover
+        cursor: pointer
+        color: white
     
 #contact-me
     background: url( "{{ site.baseurl }}/assets/images/space.jpg" ) no-repeat center center fixed
