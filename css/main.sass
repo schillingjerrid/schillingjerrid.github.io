@@ -8,97 +8,20 @@
 @import _variables
 @import _header
 @import _footer
+@import _bootstrap-overrides
 
 // Styles
-
-*
-    margin: 0
-    padding: 0
-
-html
-    background: $mainBG
-    font-family: Arial
-
-.hero
-    background: url( "{{ site.baseurl }}/assets/images/mountains.jpg" ) no-repeat center center fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
-    height: 100vh
-    position: relative
-    
-.hero-text
-    color: #445
-    text-align: center
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    
-    .hero-title
-        font-size: 8em
-
-    .hero-subtitle
-        font-size: 2em
-        
-.section-wrap
-    padding: 40px 20px
-    letter-spacing: 1px
-    text-align: center
-    
-    span
-        font-size: 1.6em
-        font-weight: bold
-        display: inline-block
-        margin-bottom: 40px
-        border-top: 1px solid
-        border-bottom: 1px solid
-    
 #about-me
-    background: $darkGreen
-    color: $tan
-    
-    ul
-        list-style: none
+    background: $lightGray
     
 #education
     background: $darkGray
-    color: $darkBlue
     
 #work-experience
-    background: $tan
-    color: $darkBlue
-    
-    .work-grp
-        margin-bottom: 20px
+    background: $smokeWhite
     
 #projects
-    background: $darkBlue
-    color: $tan
+    background: $tan
     
-    .col
-        width: 500px
-        height: 400px
-        margin: 5px
-        border: 1px solid white
-        background: black url( "{{ site.baseurl }}/assets/images/placeholder.png" ) no-repeat center center
-        color: black
-        
-        font-size: 3em
-        text-align: center
-        line-height: 400px
-        
-    .col:hover
-        cursor: pointer
-        color: white
-    
-#contact-me
-    background: url( "{{ site.baseurl }}/assets/images/space.jpg" ) no-repeat center center fixed
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
-    height: 100vh
-    position: relative
-    color: $smokeWhite
+#contact
+    background: $darkGreen
