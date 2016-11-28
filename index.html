@@ -1,124 +1,20 @@
 ---
 layout: default
-title: Home
 ---
 
-{% include nav.html %}
+<div class="home">
 
-{% include header.html %}
+  <h1>Posts</h1>
 
-<main>
-    
-  <section id="about-me" class="container-fluid">
-    
-    <div id="about-me-anchor" class="hidden-anchor"></div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div class="row">
-      <h2 class="text-center">About Me</h2>
-    </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    <div class="row">
-      
-      <div class="">
-        <p>Born in the Colorado, my parents soon moved us back to their home state of Wyoming. My education was </p>
-      </div>
-      
-    </div>
-    
-  </section>
-  
-  
-  <section id="education" class="container-fluid">
-    
-    <div id="education-anchor" class="hidden-anchor"></div>
-    
-    <div class="row">
-      <h2 class="text-center">Education</h2>
-    </div>
-    
-    <div class="row">
-      
-      <div class="">
-        <ul>
-          <li>University of Wyoming</li>
-        </ul>
-      </div>
-      
-    </div>
-    
-  </section>
-
-
-  <section id="work-experience" class="container-fluid">
-    
-    <div id="work-experience-anchor" class="hidden-anchor"></div>
-    
-    <div class="row">
-      <h2 class="text-center">Work Experience</h2>
-    </div>
-    
-    <div class="row">
-      
-      <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget neque risus. Phasellus dictum vehicula metus, eu finibus libero lacinia id. Pellentesque porttitor elementum sapien sed malesuada. Phasellus eget arcu vel felis consequat convallis. Donec feugiat mollis libero vitae volutpat. Donec ultricies accumsan arcu, at ullamcorper arcu lacinia a. In aliquam nulla ut elementum commodo. Nunc maximus metus sit amet enim rutrum, sit amet mollis dui ornare. Duis maximus vel tellus sit amet porta. Praesent vel felis eget dolor viverra molestie. Nunc lectus eros, posuere ac ex ut, dignissim sagittis lectus.</p>
-      </div>
-      
-      <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget neque risus. Phasellus dictum vehicula metus, eu finibus libero lacinia id. Pellentesque porttitor elementum sapien sed malesuada. Phasellus eget arcu vel felis consequat convallis. Donec feugiat mollis libero vitae volutpat. Donec ultricies accumsan arcu, at ullamcorper arcu lacinia a. In aliquam nulla ut elementum commodo. Nunc maximus metus sit amet enim rutrum, sit amet mollis dui ornare. Duis maximus vel tellus sit amet porta. Praesent vel felis eget dolor viverra molestie. Nunc lectus eros, posuere ac ex ut, dignissim sagittis lectus.</p>
-      </div>
-      
-    </div>
-    
-  </section>
-
-
-  <section id="projects" class="container-fluid">
-    
-    <div id="projects-anchor" class="hidden-anchor"></div>
-    
-    <div class="row">
-      <h2 class="text-center">Projects</h2>
-    </div>
-    
-    <div class="row">
-      
-      <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget neque risus. Phasellus dictum vehicula metus, eu finibus libero lacinia id. Pellentesque porttitor elementum sapien sed malesuada. Phasellus eget arcu vel felis consequat convallis. Donec feugiat mollis libero vitae volutpat. Donec ultricies accumsan arcu, at ullamcorper arcu lacinia a. In aliquam nulla ut elementum commodo. Nunc maximus metus sit amet enim rutrum, sit amet mollis dui ornare. Duis maximus vel tellus sit amet porta. Praesent vel felis eget dolor viverra molestie. Nunc lectus eros, posuere ac ex ut, dignissim sagittis lectus.</p>
-      </div>
-      
-      <div class="col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget neque risus. Phasellus dictum vehicula metus, eu finibus libero lacinia id. Pellentesque porttitor elementum sapien sed malesuada. Phasellus eget arcu vel felis consequat convallis. Donec feugiat mollis libero vitae volutpat. Donec ultricies accumsan arcu, at ullamcorper arcu lacinia a. In aliquam nulla ut elementum commodo. Nunc maximus metus sit amet enim rutrum, sit amet mollis dui ornare. Duis maximus vel tellus sit amet porta. Praesent vel felis eget dolor viverra molestie. Nunc lectus eros, posuere ac ex ut, dignissim sagittis lectus.</p>
-      </div>
-      
-    </div>
-    
-  </section>
-
-
-  <section id="contact-me" class="container-fluid">
-    
-    <div id="contact-me-anchor" class="hidden-anchor"></div>
-    
-    <div class="row">
-      <h2 class="text-center">Contact Me</h2>
-    </div>
-    
-    <div class="row">
-      
-      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-        <div class="well well-lg contact-well">
-          <p>Jerrid Schilling</p>
-          <p>Cheyenne, Wyoming</p>
-          <p><a href="mailto:jerrid.schilling@outlook.com">jerrid.schilling@outlook.com</a></p>
-          <br>
-          <p>Connect with me on social media</p>
-        </div>
-      </div>
-      
-    </div>
-    
-  </section>
-  
-</main>
-  
-{% include footer.html %}
+</div>
