@@ -1,6 +1,7 @@
  <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+ {% for project in site.posts %}
+    {% if project.tag contains "project" %}
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -12,22 +13,31 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
+                            <h2>{{ project.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
+                            {% if project.imgtype == 'video' %}
+                            <video width="100%" controls>
+                                <source src="content/video/{{ project.img }}.mp4" type="video/mp4">
+                                <source src="content/video/{{ project.img }}.webm" type="video/webm">
+                                Sorry, but it looks like your browser does not support the video tag.
+                            </video>
+                            {% else %}
+                            <img src="img/portfolio/{{ project.img }}" class="img-responsive img-centered" alt="{{ project.alt }}">
+                            {% endif %}
+                            <p>{{ project.description }}</p>
+                            {% if project.demo %}
+                            <a class="demo-link" href="{{ project.demo }}" target="_blank" rel="noopener noreferrer">View Site</a>
+                            {% endif %}
+                            <p>Technologies: {{ project.technologies }}</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                    </strong>
+                                    <strong>{{ project.client }}</strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
+                                    <strong>{{ project.project-date }}</strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
+                                    <strong>{{ project.category }}</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -37,4 +47,5 @@
             </div>
         </div>
     </div>
+    {% endif %}
 {% endfor %}

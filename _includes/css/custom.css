@@ -1,0 +1,16 @@
+.resume-cta {
+    border-radius: 3px;
+    background-color: #fed136;
+}
+
+section#education {
+    background-color: #222;
+    background-image: url({{ site.baseurl }}/img/graduation.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+section#education .section-heading {
+    color: #fff;
+}

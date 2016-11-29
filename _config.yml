@@ -7,31 +7,25 @@ email: jerrid.schilling@outlook.com
 description: "The homepage of software engineer, Jerrid Schilling, used to provide information about his education, experience and portfolio."
 
 
-# Team names, titles and social links
-people:
-- name: Jerrid Schilling
-  pic: 1
-  position: Software Engineer
-  social:
-    - title: twitter
-      url: http://twitter.com/schillingjerrid
-    - title: linkedin
-      url: https://www.linkedin.com/in/jerrid-schilling-20b06b8b
-    - title: github
-      url: https://github.com/schillingjerrid
+# Author name, title and social links
+author: Jerrid Schilling
+pic: jerrid
+position: Software Engineer
+
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
     url: http://twitter.com/schillingjerrid
   - title: linkedin
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: https://www.linkedin.com/in/jerrid-schilling-20b06b8b
   - title: github
     url: https://github.com/schillingjerrid
+  - title: codepen
+    url: http://codepen.io/schillingjerrid/
 
 # Postal address (add as many lines as necessary)
-address:
-  - line: Cheyenne, WY
+address: Cheyenne, WY
 
 # Build settings
 markdown: kramdown
