@@ -1,0 +1,50 @@
+ <!-- Portfolio Modals -->
+ {% for project in site.posts %}
+    {% if project.tag contains "project" %}
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ project.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ project.title }}</h2>
+                            <hr class="star-primary">
+                            {% if project.imgtype == 'video' %}
+                            <video width="100%" controls>
+                                <source src="content/video/{{ project.img }}.webm" type="video/webm">
+                                Sorry, but it looks like your browser does not support the video tag.
+                            </video>
+                            {% else %}
+                            <img src="img/portfolio/{{ project.img }}" class="img-responsive img-centered" alt="{{ project.alt }}">
+                            {% endif %}
+                            <p>{{ project.description }}</p>
+                            {% if project.demo %}
+                            <a class="demo-link" href="{{ project.demo }}" target="_blank" rel="noopener noreferrer">View Site</a>
+                            {% endif %}
+                            <p>Technologies: {{ project.technologies }}</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong>{{ project.client }}</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>{{ project.project-date }}</strong>
+                                </li>
+                                <li>Service:
+                                    <strong>{{ project.category }}</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endfor %}
