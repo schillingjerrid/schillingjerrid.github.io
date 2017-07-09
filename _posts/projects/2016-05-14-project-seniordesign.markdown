@@ -6,8 +6,8 @@ layout: default
 modal-id: 2
 date: 2016-05-14
 imgtype: picture
-img: placeholder.png
-thumbnail: placeholder.png
+img: seniordesign.png
+thumbnail: seniordesign-thumbnail.png
 alt: image-alt
 project-date: May 2016
 client: University of Wyoming

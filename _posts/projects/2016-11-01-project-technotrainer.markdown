@@ -6,8 +6,8 @@ layout: default
 modal-id: 3
 date: 2016-11-01
 imgtype: picture
-img: placeholder.png
-thumbnail: placeholder.png
+img: technotrainer.png
+thumbnail: technotrainer-thumbnail.png
 alt: image-alt
 project-date: November 2016
 client: TechnoTrainer

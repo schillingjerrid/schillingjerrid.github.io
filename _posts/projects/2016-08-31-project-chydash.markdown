@@ -7,7 +7,7 @@ modal-id: 1
 date: 2016-08-31
 imgtype: video
 img: chydash
-thumbnail: placeholder.png
+thumbnail: chydash-thumbnail.png
 alt: image-alt
 project-date: August 2016
 client: Holly Frontier Corp

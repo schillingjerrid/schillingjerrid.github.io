@@ -6,8 +6,8 @@ layout: default
 modal-id: 5
 date: 2016-08-01
 imgtype: picture
-img: placeholder.png
-thumbnail: placeholder.png
+img: quote.png
+thumbnail: quote-thumbnail.png
 alt: image-alt
 project-date: August 2016
 client: Free Code Camp
