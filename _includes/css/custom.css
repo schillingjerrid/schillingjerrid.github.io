@@ -3,7 +3,7 @@
     background-color: #fed136;
 }
 
-section#education {
+#education {
     background-color: #222;
     background-image: url({{ site.baseurl }}/img/graduation.png);
     background-position: center;
@@ -11,6 +11,18 @@ section#education {
     background-size: auto;
 }
 
-section#education .section-heading {
+#education .section-heading {
     color: #fff;
+}
+
+@media only screen and (max-width: 530px) {
+    .resize-link {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .resize-link {
+        font-size: 16px;
+    }
 }
